@@ -30,7 +30,7 @@ fun getResult(computerChoice: String, playerChoice: String) {
 
 fun getPlayerChoice(): String {
     while (true) {
-        println("Please enter one of the following: Rock Paper Scissors.")
+        println("Please enter one of the following: ${RPS.joinToString(" ")}.")
         val inputVariant = readln()
         if (RPS.contains(inputVariant)) return inputVariant
         else {
